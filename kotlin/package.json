@@ -1,0 +1,12 @@
+{
+  "name": "prime-to-js-kotlin",
+  "version": "0.0.0",
+  "description": "",
+  "main": "prime.js",
+  "scripts": {},
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "kotlin": "1.3.21"
+  }
+}

@@ -1,0 +1,11 @@
+$ (transcrypt | grep Transcrypt) && python3 -V
+Transcrypt (TM) Python to JavaScript Small Sane Subset Transpiler Version 3.7.16 Python 3.6.7
+$ wc -c python/prime.js python/__target__/org.transcrypt.__runtime__.mjs
+    1494 python/prime.js
+   43064 python/__target__/org.transcrypt.__runtime__.mjs
+   44558 total
+$ hyperfine 'node --experimental-modules python/__target__/prime.mjs; echo python/prime.js'
+Benchmark #1: node --experimental-modules python/__target__/prime.mjs; echo python/prime.js
+  Time (mean ± σ):     498.8 ms ±  13.7 ms    [User: 484.7 ms, System: 14.5 ms]
+  Range (min … max):   482.2 ms … 520.8 ms    10 runs
+ 
